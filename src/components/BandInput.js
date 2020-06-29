@@ -1,18 +1,15 @@
-// Add BandInput component
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 class BandInput extends Component {
+    state = {
+        name: ''
+    };
 
-state = {
-  name: ''
-}
-
-handleChange = event => { 
-this.setState({
-  name: event.target.value
-})
-}
-
+    handleChange = event => {
+        this.setState({
+            name: event.target.value
+        });
+    };
 
     handleSubmit = event => {
         event.preventDefault();
@@ -41,15 +38,5 @@ this.setState({
         );
     }
 }
-}
 
-  render() {
-    return(
-      <div>
-        Band Input
-      </div>
-    )
-  }
-}
-
-export default BandInput
+export default BandInput;
