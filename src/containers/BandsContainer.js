@@ -5,6 +5,7 @@ import BandInput from '../components/BandInput';
 class BandsContainer extends Component {
  renderBands = () => this.props.bands.map((band, index) => <li>{band.name}</li>)
  
+ render() {
     return(
       <div>
         BandInput addBand={this.props.addBand}/>
@@ -15,7 +16,11 @@ class BandsContainer extends Component {
   }
 }
 
-
+const mapStateToProps = state => {
+  return{
+    bands: state.g
+  }
+}
 
 
 
