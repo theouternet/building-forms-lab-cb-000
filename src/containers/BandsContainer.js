@@ -22,7 +22,7 @@ const mapStateToProps = state => {
   }
 }
 
-const mapDispatchToProps = 
+const mapDispatchToProps = dispatch => ({ addBand: band => })
 
 
 export default BandsContainer
