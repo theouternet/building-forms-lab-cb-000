@@ -8,7 +8,9 @@ state = {
 }
 
 handleChange = event => { 
-
+this.setState({
+  name: event.target.value
+})
 }
 
 
